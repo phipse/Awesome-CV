@@ -13,11 +13,14 @@ You can see [PDF](https://github.com/missCarrieMah/Awesome-CV/blob/cm-resume/exa
 * Created a skill section
 * Modified font size and colors for readability and consistency with website colors
 
+## Running on Mac
+If you open this [font folder](https://github.com/missCarrieMah/Awesome-CV/blob/cm-resume/Fonts.zip) simply install the fonts and you should be able to run it.
+
 ## TODO
 Create a cover letter
 
 Original Documentation
--------------
+==========
 
 This is the class for writing CV(Curriculum Vitae) in LaTeX. It basically provides an awesome template for CV. It is also fairly customizable, allowing you to change the colors, the fonts, etc.
 
