@@ -1,8 +1,15 @@
 Awesome CV
 ==========
 
-This is the class for writing CV(Curriculum Vitae) in LaTeX. It basically provides an awesome template for CV. It is also fairly customizable, allowing you to change the colors, the fonts, etc.
+This is a LaTeX CV template written by [posquit0](https://github.com/posquit0/Awesome-CV). I have modified it to fit my needs. 
 
+## TODO
+Create a cover letter
+
+Original Documentation
+-------------
+
+This is the class for writing CV(Curriculum Vitae) in LaTeX. It basically provides an awesome template for CV. It is also fairly customizable, allowing you to change the colors, the fonts, etc.
 
 ## Preview
 You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
