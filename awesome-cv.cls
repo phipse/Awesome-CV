@@ -9,7 +9,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{awesome-cv}[2015/05/05 v1.0.0 Awesome Curriculum Vitae Class]
+\ProvidesClass{awesome-cv}[2015/10/10 v1.1.0 Awesome Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
 
 
@@ -92,7 +92,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.3cm}
+\geometry{left=1.5cm, top=1cm, right=1.5cm, bottom=2.0cm, footskip=.3cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -108,10 +108,10 @@
 %-------------------------------------------------------------------------------
 %                Configuration for colors
 %-------------------------------------------------------------------------------
+
 % Gray-scale colors
 \definecolor{white}{HTML}{FFFFFF}
 \definecolor{black}{HTML}{000000}
-\definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{5D5D5D}
 \definecolor{lightgray}{HTML}{999999}
 % Basic colors
@@ -130,6 +130,18 @@
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
 \colorlet{awesome}{awesome-red}
+
+% Website colors
+\definecolor{awesome-primary}{HTML}{70AFC4}
+\definecolor{awesome-secondary}{HTML}{7AC1C4}
+\definecolor{awesome-accent}{HTML}{8ED081}
+\definecolor{awesome-text}{HTML}{2d2d2d}
+\definecolor{awesome-darktext}{HTML}{414141}
+\colorlet{awesome}{awesome-primary}
+\colorlet{awesome}{awesome-secondary}
+\colorlet{awesome}{awesome-accent}
+\colorlet{awesome}{awesome-text}
+\colorlet{awesome}{awesome-darktext}
 
 % Awesome section color
 \newcounter{colorCounter}
@@ -183,36 +195,36 @@ ItalicFont=*Italic,
 % Configure fonts for each CV elements
 % For fundamental structures
 \newcommand*{\headernamefont}{\fontsize{32pt}{1em}\roboto\bfseries}
-\newcommand*{\headeraddressfont}{\fontsize{9pt}{1em}\sourcesans\itshape}
-\newcommand*{\headersocialfont}{\fontsize{7pt}{1em}\sourcesans}
+\newcommand*{\headeraddressfont}{\fontsize{11pt}{1em}\sourcesans}
+\newcommand*{\headersocialfont}{\fontsize{9pt}{1em}\sourcesans}
 \newcommand*{\headerquotefont}{\fontsize{11pt}{1em}\robotocondensed}
-\newcommand*{\footerfont}{\fontsize{8pt}{1em}\sourcesans\scshape}
+\newcommand*{\footerfont}{\fontsize{10pt}{1em}\sourcesans\scshape}
 \newcommand*{\sectionfont}{\fontsize{16pt}{1em}\sourcesans\bfseries}
 \newcommand*{\subsectionfont}{\fontsize{12pt}{1em}\sourcesans\scshape}
 
 % For elements of entry
-\newcommand*{\entrytitlefont}{\fontsize{10pt}{1em}\sourcesans\bfseries}
-\newcommand*{\entrypositionfont}{\fontsize{8pt}{1em}\sourcesans\scshape}
-\newcommand*{\entrydatefont}{\fontsize{8pt}{1em}\sourcesanslight\slshape}
-\newcommand*{\entrylocationfont}{\fontsize{9pt}{1em}\sourcesanslight\slshape}
-\newcommand*{\descriptionfont}{\fontsize{9pt}{1em}\sourcesanslight\upshape}
+\newcommand*{\entrytitlefont}{\fontsize{11pt}{1em}\sourcesans\bfseries}
+\newcommand*{\entrypositionfont}{\fontsize{10pt}{1em}\sourcesans\scshape}
+\newcommand*{\entrydatefont}{\fontsize{10pt}{1em}\sourcesanslight}
+\newcommand*{\entrylocationfont}{\fontsize{10pt}{1em}\sourcesanslight\slshape}
+\newcommand*{\descriptionfont}{\fontsize{10pt}{1.2em}\sourcesanslight\upshape}
 
 % For elements of subentry
-\newcommand*{\subentrytitlefont}{\fontsize{8pt}{1em}\sourcesans\mdseries}
-\newcommand*{\subentrypositionfont}{\fontsize{7pt}{1em}\sourcesans\scshape}
-\newcommand*{\subentrydatefont}{\fontsize{7pt}{1em}\sourcesanslight\slshape}
-\newcommand*{\subentrylocationfont}{\fontsize{7pt}{1em}\sourcesanslight\slshape}
-\newcommand*{\subdescriptionfont}{\fontsize{8pt}{1em}\sourcesanslight\upshape}
+\newcommand*{\subentrytitlefont}{\fontsize{11pt}{1em}\sourcesans\mdseries}
+\newcommand*{\subentrypositionfont}{\fontsize{10pt}{1em}\sourcesans\scshape}
+\newcommand*{\subentrydatefont}{\fontsize{10pt}{1em}\sourcesanslight}
+\newcommand*{\subentrylocationfont}{\fontsize{10pt}{1em}\sourcesanslight\slshape}
+\newcommand*{\subdescriptionfont}{\fontsize{10pt}{1em}\sourcesanslight\upshape}
 
 % For elements of honor
-\newcommand*{\honortitlefont}{\fontsize{9pt}{1em}\sourcesans}
-\newcommand*{\honorpositionfont}{\fontsize{9pt}{1em}\sourcesans\bfseries}
-\newcommand*{\honordatefont}{\fontsize{9pt}{1em}\sourcesans}
-\newcommand*{\honorlocationfont}{\fontsize{9pt}{1em}\sourcesanslight\slshape}
+\newcommand*{\honortitlefont}{\fontsize{10pt}{1em}\sourcesans}
+\newcommand*{\honorpositionfont}{\fontsize{10pt}{1em}\sourcesans\bfseries}
+\newcommand*{\honordatefont}{\fontsize{10pt}{1em}\sourcesans}
+\newcommand*{\honorlocationfont}{\fontsize{10pt}{1em}\sourcesanslight\slshape}
 
 % For elements of skills
-\newcommand*{\skilltypefont}{\fontsize{9pt}{1em}\sourcesans\bfseries}
-\newcommand*{\skillsetfont}{\fontsize{9pt}{1em}\sourcesans}
+\newcommand*{\skilltypefont}{\fontsize{10pt}{1em}\sourcesans\bfseries}
+\newcommand*{\skillsetfont}{\fontsize{10pt}{1em}\sourcesanslight}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
@@ -220,25 +232,25 @@ ItalicFont=*Italic,
 % Configure styles for each CV elements
 % For fundamental structures
 \newcommand*{\headernamestyle}[1]{{\headernamefont\color{darkgray} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\headeraddressfont\color{lightgray} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\headeraddressfont\color{awesome-secondary} #1}}
 \newcommand*{\headersocialstyle}[1]{{\headersocialfont\color{darkgray} #1}}
 \newcommand*{\headerquotestyle}[1]{{\headerquotefont\color{awesome} #1}}
 \newcommand*{\footerstyle}[1]{{\footerfont\color{lightgray} #1}}
-\newcommand*{\sectionstyle}[1]{{\sectionfont\color{darkgray}\@sectioncolor #1}}
-\newcommand*{\subsectionstyle}[1]{{\subsectionfont\textcolor{darkgray}{#1}}}
+\newcommand*{\sectionstyle}[1]{{\sectionfont\color{awesome}\@sectioncolor #1}}
+\newcommand*{\subsectionstyle}[1]{{\subsectionfont\textcolor{awesome-text}{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\entrytitlefont\color{gray} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\entrytitlefont\color{awesome-darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\entrypositionfont\color{gray} #1}}
-\newcommand*{\entrydatestyle}[1]{{\entrydatefont\color{gray} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\entrylocationfont\color{awesome} #1}}
+\newcommand*{\entrydatestyle}[1]{{\entrydatefont\color{awesome} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\entrylocationfont\color{darkgray} #1}}
 \newcommand*{\descriptionstyle}[1]{{\descriptionfont\color{darkgray} #1}}
 
 % For elements of subentry
-\newcommand*{\subentrytitlestyle}[1]{{\subentrytitlefont\color{gray} #1}}
+\newcommand*{\subentrytitlestyle}[1]{{\subentrytitlefont\color{awesome-darktext} #1}}
 \newcommand*{\subentrypositionstyle}[1]{{\subentrypositionfont\color{gray} #1}}
-\newcommand*{\subentrydatestyle}[1]{{\subentrydatefont\color{gray} #1}}
-\newcommand*{\subentrylocationstyle}[1]{{\subentrylocationfont\color{awesome} #1}}
+\newcommand*{\subentrydatestyle}[1]{{\subentrydatefont\color{awesome} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\subentrylocationfont\color{gray} #1}}
 \newcommand*{\subdescriptionstyle}[1]{{\subdescriptionfont\color{darkgray} #1}}
 
 % For elements of honor
@@ -248,8 +260,8 @@ ItalicFont=*Italic,
 \newcommand*{\honorlocationstyle}[1]{{\honorlocationfont\color{awesome} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\skilltypefont\color{gray} #1}}
-\newcommand*{\skillsetstyle}[1]{{\skillsetfont\color{gray} #1}}
+\newcommand*{\skilltypestyle}[1]{{\skilltypefont\color{awesome-darktext} #1}}
+\newcommand*{\skillsetstyle}[1]{{\skillsetfont\color{darkgray} #1}}
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -324,13 +336,13 @@ ItalicFont=*Italic,
   %\\
   \begin{center}
     \headernamestyle{
-      {\robotothin\color{gray} \@firstname}{\roboto \@lastname}
+      {\robotothin\color{awesome-text} \@firstname~}{\roboto\color{awesome-primary} \@lastname}
     } \\
-    \vspace{2mm}
+    \vspace{0.5mm}
     \headeraddressstyle{
       \ifthenelse{\isundefined{\@address}}{}{\@address}
     } \\
-    \vspace{-0.5mm}
+    \vspace{1mm}
     \headersocialstyle{
       \ifthenelse{\isundefined{\@mobile}}
         {}{\faMobile\ \@mobile}
@@ -347,6 +359,7 @@ ItalicFont=*Italic,
       \ifthenelse{\isundefined{\@linkedin}}
         {}{\href{http://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\ \@linkedin}}
     } \\
+    \vspace{3mm}
   \end{center}
 }
 
@@ -356,7 +369,7 @@ ItalicFont=*Italic,
   \fancyfoot{}
   \fancyfoot[L]{}
   \fancyfoot[C]{
-    \footerstyle{\@firstname \@lastname · Curriculum Vitae}
+    \footerstyle{\@firstname~\@lastname~· Curriculum Vitae}
   }
   \fancyfoot[R]{
     \footerstyle{\thepage}
@@ -366,11 +379,9 @@ ItalicFont=*Italic,
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
 }
 
 % Define a subsection for CV
@@ -387,14 +398,14 @@ ItalicFont=*Italic,
   \end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
+% Usage: \cventry{<title>}{<position>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5.5cm}}
-    \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-    \entrypositionstyle{#1} & \entrydatestyle{#4} \\
-    \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5.6cm}}
+    \entrytitlestyle{#1} & \entrylocationstyle{#3} \\
+    \entrypositionstyle{#2} & \entrydatestyle{#4} \\
+    \multicolumn{2}{L{18cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
 
@@ -418,7 +429,7 @@ ItalicFont=*Italic,
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
     \ifthenelse{\equal{#4}{}}
       {}
-      {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
+      {\multicolumn{2}{L{18cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
 }
 
@@ -428,7 +439,7 @@ ItalicFont=*Italic,
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
     %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{0cm}}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3cm} L{13.0cm} R{0cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3cm} L{13cm} R{0cm}}
 }{
     \end{tabular*}
   \end{center}
@@ -448,7 +459,7 @@ ItalicFont=*Italic,
   \vspace{-4mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
+    \setlength{\parskip}{1.3mm}
     \renewcommand{\labelitemi}{\bullet}
 }{
   \end{itemize}
