@@ -3,6 +3,16 @@ Awesome CV
 
 This is a LaTeX CV template written by [posquit0](https://github.com/posquit0/Awesome-CV). I have modified it to fit my needs. 
 
+## Carrie's Resume
+You can see [PDF](Awesome-CV/examples/resume.pdf)
+
+![alt tag](Awesome-CV/examples/mah_carrie_resume1.png)
+![alt tag](Awesome-CV/examples/mah_carrie_resume2.png)
+
+## Modifications
+* Created a skill section
+* Modified font size and colors for readability and consistency with website colors
+
 ## TODO
 Create a cover letter
 
