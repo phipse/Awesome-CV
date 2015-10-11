@@ -319,7 +319,7 @@ ItalicFont=*Italic,
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % Use to draw horizontal line with specific tickness
-\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height0.3ex \hfill \kern\z@}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of CV structure
@@ -369,7 +369,7 @@ ItalicFont=*Italic,
   \fancyfoot{}
   \fancyfoot[L]{}
   \fancyfoot[C]{
-    \footerstyle{\@firstname~\@lastname~· Curriculum Vitae}
+    \footerstyle{\@firstname~\@lastname~·~Resume}
   }
   \fancyfoot[R]{
     \footerstyle{\thepage}
@@ -381,7 +381,7 @@ ItalicFont=*Italic,
 \newcommand{\cvsection}[1]{
   \phantomsection{}
   \sectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{awesome-darktext}\vhrulefill{0.9pt}
 }
 
 % Define a subsection for CV
@@ -405,7 +405,7 @@ ItalicFont=*Italic,
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5.6cm}}
     \entrytitlestyle{#1} & \entrylocationstyle{#3} \\
     \entrypositionstyle{#2} & \entrydatestyle{#4} \\
-    \multicolumn{2}{L{18cm}}{\descriptionstyle{#5}} \\
+    \multicolumn{2}{L{18.5cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
 
@@ -429,7 +429,7 @@ ItalicFont=*Italic,
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
     \ifthenelse{\equal{#4}{}}
       {}
-      {\multicolumn{2}{L{18cm}}{\subdescriptionstyle{#4}} \\}
+      {\multicolumn{2}{L{18.5cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
 }
 
@@ -450,15 +450,16 @@ ItalicFont=*Italic,
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
     %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{0cm}}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3cm} L{13cm} R{0cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3cm} L{15.2cm} R{0cm}}
 }{
     \end{tabular*}
   \end{center}
+  \vspace{4mm}
 }
 % Define a line of cv information
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{
-   \skilltypestyle{#1} & \skillsetstyle{#2}
+   \skilltypestyle{#1} & \skillsetstyle{#2} 
   \\
 }
 
@@ -470,7 +471,7 @@ ItalicFont=*Italic,
   \vspace{-4mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{1.3mm}
+    \setlength{\parskip}{1.3mm} 
     \renewcommand{\labelitemi}{\bullet}
 }{
   \end{itemize}
