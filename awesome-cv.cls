@@ -92,7 +92,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.5cm, top=1cm, right=1.5cm, bottom=2.0cm, footskip=.3cm}
+\geometry{left=3cm, top=2.5cm, right=3cm, bottom=2.5cm, footskip=.3cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -431,6 +431,17 @@ ItalicFont=*Italic,
       {}
       {\multicolumn{2}{L{18cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
+}
+
+% Define an environment for cvhonor
+\newenvironment{cvhonors}{
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{2.5cm}}
+}{
+    \end{tabular*}
+  \end{center}
 }
 
 % Define an environment for cvskill
