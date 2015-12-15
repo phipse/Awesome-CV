@@ -452,10 +452,12 @@ ItalicFont=*Italic,
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
+    \def\arraystretch{1.2}
     %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{0cm}}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3cm} L{15.2cm} R{0cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{4cm} L{14.2cm} R{0cm}}
 }{
     \end{tabular*}
+    \def\arraystretch{1}
   \end{center}
   \vspace{4mm}
 }
