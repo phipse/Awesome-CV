@@ -372,7 +372,7 @@ ItalicFont=*Italic,
   \fancyfoot{}
   \fancyfoot[L]{}
   \fancyfoot[C]{
-    \footerstyle{\@firstname~\@lastname~·~Resume}
+    \footerstyle{\@firstname~\@lastname~·~Resum\'{e}}
   }
   \fancyfoot[R]{
     \footerstyle{\thepage}
