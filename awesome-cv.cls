@@ -306,7 +306,7 @@ ItalicFont=*Italic,
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
 % Defines writer's stack overflow profile (optional)
-% Usage: \stackoverflow{<stack overflow number>}
+% Usage: \stackoverflow{<stack overflow profile number>}{<profile name>}
 \newcommand*{\stackoverflow}[2]{\def\@stackoverflow{#1}\def\@soNick{#2}}
 
 % Defines writer's quote (optional)
