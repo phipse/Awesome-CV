@@ -129,13 +129,13 @@
 \definecolor{awesome-nephritis}{HTML}{27AE60}
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-emerald}
 
 % Website colors
-\definecolor{awesome-primary}{HTML}{70AFC4}
-\definecolor{awesome-secondary}{HTML}{7AC1C4}
+\definecolor{awesome-primary}{HTML}{27AE60}%{70AFC4}
+\definecolor{awesome-secondary}{HTML}{00A388}%{7AC1C4}
 \definecolor{awesome-accent}{HTML}{8ED081}
-\definecolor{awesome-text}{HTML}{2d2d2d}
+\definecolor{awesome-text}{HTML}{2d2d30}
 \definecolor{awesome-darktext}{HTML}{414141}
 \colorlet{awesome}{awesome-primary}
 \colorlet{awesome}{awesome-secondary}
