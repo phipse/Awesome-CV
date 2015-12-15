@@ -350,7 +350,6 @@ ItalicFont=*Italic,
     \headersocialstyle{
       \ifthenelse{\isundefined{\@mobile}}
         {}{\faMobile\ \@mobile}
-      \quad\textbar\quad 
       \ifthenelse{\isundefined{\@email}}
         {}{\quad\textbar\quad\href{mailto:\@email}{\faEnvelope\ \@email}}
       \ifthenelse{\isundefined{\@homepage}}
