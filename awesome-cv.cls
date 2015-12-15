@@ -305,6 +305,10 @@ ItalicFont=*Italic,
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
+% Defines writer's stack overflow profile (optional)
+% Usage: \stackoverflow{<stack overflow number>}
+\newcommand*{\stackoverflow}[2]{\def\@stackoverflow{#1}\def\@soNick{#2}}
+
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
 \renewcommand*{\quote}[1]{\def\@quote{#1}}
@@ -354,7 +358,9 @@ ItalicFont=*Italic,
       \ifthenelse{\isundefined{\@github}}
         {}{\quad\textbar\quad\href{http://github.com/\@github}{\faGithubSquare\ \@github}}
       \ifthenelse{\isundefined{\@linkedin}}
-        {}{\href{http://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\ \@linkedin}}
+        {}{\quad\textbar\quad\href{http://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\ \@linkedin}}
+      \ifthenelse{\isundefined{\@stackoverflow}}
+      {}{\quad\textbar\quad\href{http://stackoverflow.com/users/\@stackoverflow?tab=profile}{\faStackOverflow\ \@soNick}}
     } \\
     \vspace{3mm}
   \end{center}
