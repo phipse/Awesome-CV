@@ -371,7 +371,7 @@ ItalicFont=*Italic,
   \fancyfoot{}
   \fancyfoot[L]{}
   \fancyfoot[C]{
-    \footerstyle{\@firstname~\@lastname~·~Resum\'{e}}
+    \footerstyle{\@firstname~\@lastname~·~R\'{e}sum\'{e}}
   }
   \fancyfoot[R]{
     \footerstyle{\thepage}
